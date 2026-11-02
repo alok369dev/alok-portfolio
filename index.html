@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alok | Web Developer, UI/UX & Motion Designer in Mumbai</title>
+<meta name="description" content="Alok is a Mumbai-based web developer, UI/UX designer and motion designer with 5 years of experience building websites for safety, media and community brands.">
+<link rel="canonical" href="https://[YOUR-DOMAIN]/">
+<meta property="og:title" content="Alok | Web Developer, UI/UX & Motion Designer">
+<meta property="og:description" content="I design, animate and build websites people remember. Based in Mumbai, available for new projects.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","name":"Alok","jobTitle":"Web Developer, UI/UX Designer and Motion Designer","email":"mailto:alok369.dev@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"},"knowsAbout":["Web development","UI/UX design","Motion design","React","WordPress","Figma","After Effects"],"sameAs":["https://www.linkedin.com/in/alok-yadav-1834242a0/","https://github.com/alok369dev","https://www.instagram.com/official_graphic_designer151/"]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Are you available for new projects?","acceptedAnswer":{"@type":"Answer","text":"Yes. Send a short brief through the contact form, WhatsApp or email and I will reply with next steps."}},
+{"@type":"Question","name":"What technologies do you work with?","acceptedAnswer":{"@type":"Answer","text":"HTML, CSS, JavaScript, React and WordPress for development, Figma and Photoshop for design, and After Effects, Premiere Pro and Spline for motion."}},
+{"@type":"Question","name":"Can you handle both design and development?","acceptedAnswer":{"@type":"Answer","text":"Yes. I design the interface, animate the brand moments and build the finished website, so one person owns the whole flow."}},
+{"@type":"Question","name":"How much does a website cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on scope. Share your goals, pages and deadline, and I will send a clear quote."}}]}]}
+</script>
+<style>
+:root{--bg:#f5f6fa;--card:#fff;--text:#0d1523;--muted:#566178;--line:#d6dbe6;--accent:#b86a00;--accent-ink:#fff;--glow:rgba(184,106,0,.16);--teal:#0a7f8f;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#080d18;--card:#101828;--text:#f1f4fa;--muted:#9aa6bd;--line:#26324a;--accent:#f5a94a;--accent-ink:#080d18;--glow:rgba(245,169,74,.2);--teal:#3ec5d6;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#080d18;--card:#101828;--text:#f1f4fa;--muted:#9aa6bd;--line:#26324a;--accent:#f5a94a;--accent-ink:#080d18;--glow:rgba(245,169,74,.2);--teal:#3ec5d6;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;line-height:.95;letter-spacing:.01em;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:96px 0}
+h2{font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:20px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 40px}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font:1.9rem "Bebas Neue";text-decoration:none;letter-spacing:.04em}
+nav{display:flex;gap:22px;align-items:center}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--text)}
+button{font:inherit;cursor:pointer}
+.icon-btn{background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;width:40px;height:40px}
+.menu-btn{display:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:6px;font-weight:700;text-decoration:none;border:1.5px solid var(--accent);transition:transform .15s,background .15s}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--text);border-color:var(--line)}
+.btn:hover{transform:translateY(-2px)}
+/* hero */
+.hero{position:relative;padding:clamp(72px,12vw,150px) 0 90px;overflow:hidden;--mx:72%;--my:30%}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(520px circle at var(--mx) var(--my),var(--glow),transparent 70%);pointer-events:none}
+.hero h1{font-size:clamp(3.8rem,11.5vw,10rem);max-width:12ch}
+.hero p.sub{font-size:1.2rem;color:var(--muted);max-width:52ch;margin:28px 0 36px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:72px;border-top:1px solid var(--line)}
+.facts div{padding:22px 18px 0 0}
+.facts b{display:block;font:2.4rem/1 "Bebas Neue";color:var(--accent)}
+.facts span{color:var(--muted);font-size:.95rem}
+.orb{position:fixed;left:0;top:0;width:34px;height:34px;border:1.5px solid var(--teal);border-radius:50%;pointer-events:none;z-index:50;opacity:0;transition:opacity .3s,width .2s,height .2s;box-shadow:0 0 22px var(--glow)}
+.orb::after{content:"";position:absolute;inset:0;margin:auto;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.orb.on{opacity:1}
+/* work */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+.tab{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:8px 20px;min-height:44px}
+.tab[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}
+.proj{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:10px;padding:26px;background:var(--card);border:1px solid var(--line);border-radius:10px;min-height:230px;transition:border-color .2s,transform .2s}
+.proj:hover{border-color:var(--accent);transform:translateY(-3px)}
+.proj:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.proj h3{font-size:2.3rem}
+.proj .cat{color:var(--accent);font-weight:700;font-size:.95rem}
+.proj p{margin:0;color:var(--muted);font-size:.98rem}
+.proj .tags{margin-top:auto;color:var(--muted);font-size:.88rem}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text);width:min(640px,calc(100% - 32px));padding:36px;max-height:88vh;overflow:auto}
+dialog::backdrop{background:rgba(2,5,12,.72)}
+dialog h3{font-size:3.2rem;margin:6px 0 10px}
+dialog dl{margin:22px 0;display:grid;grid-template-columns:110px 1fr;gap:10px 16px}
+dialog dt{color:var(--muted)}dialog dd{margin:0}
+.todo{color:var(--muted);font-style:italic}
+.close{float:right}
+/* about, skills */
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:56px}
+.about p{margin:0 0 18px;max-width:58ch}
+.skills h3{font-size:1.7rem;margin:0 0 10px;color:var(--accent)}
+.skills ul{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-wrap:wrap;gap:8px}
+.skills li{border:1px solid var(--line);border-radius:6px;padding:4px 12px;font-size:.95rem;background:var(--card)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.services div{padding:30px 28px 10px 0}
+.services h3{font-size:2.1rem;margin-bottom:10px}
+.services p{margin:0;color:var(--muted)}
+ol.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+ol.steps li{counter-increment:s;border-top:2px solid var(--accent);padding-top:16px}
+ol.steps li::before{content:counter(s);font:2.6rem "Bebas Neue";color:var(--accent);display:block}
+ol.steps b{display:block;margin-bottom:4px}
+ol.steps span{color:var(--muted);font-size:.97rem}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--accent);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin:12px 0 0;color:var(--muted);max-width:68ch}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+form{display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:500}
+input,textarea{font:inherit;color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:13px 14px;min-height:48px;width:100%}
+textarea{min-height:140px;resize:vertical}
+.err{color:#d6453d;font-size:.9rem;min-height:1.2em}
+.hp{position:absolute;left:-9999px}
+.links{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.links a{text-decoration:none;border-bottom:1px solid var(--line)}
+.links a:hover{border-color:var(--accent)}
+.final{background:var(--card);border-block:1px solid var(--line);text-align:center;padding:90px 0}
+.final h2{font-size:clamp(3rem,8vw,6rem)}
+footer{padding:36px 0 110px;color:var(--muted);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sticky{display:none}
+@media (max-width:820px){
+section{padding:68px 0}
+.menu-btn{display:inline-block}
+nav{position:absolute;top:calc(64px + env(safe-area-inset-top,0px));left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;display:none;padding:8px 20px 16px}
+nav.open{display:flex}
+nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+.facts{grid-template-columns:1fr 1fr}
+.about,.contact,.services,ol.steps{grid-template-columns:1fr}
+.services div{padding-right:0}
+.sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line)}
+.sticky .btn{flex:1}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.orb{display:none}}
+@media (hover:none){.orb{display:none}}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="orb" id="orb" aria-hidden="true"></div>
+<header>
+<div class="wrap">
+<a class="logo" href="#top">Alok</a>
+<nav id="nav" aria-label="Main">
+<a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+</nav>
+<div style="display:flex;gap:8px">
+<button class="icon-btn" id="theme" aria-label="Switch light and dark theme">◐</button>
+<button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+</div>
+</div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+<div class="wrap">
+<h1 class="rise">I design, animate and build websites people remember.</h1>
+<p class="sub rise" style="animation-delay:.15s">I’m Alok, a web developer and designer in Mumbai. I take a project from first wireframe to live launch, and I’m open to new work.</p>
+<div class="cta-row rise" style="animation-delay:.3s">
+<a class="btn primary" href="#work">View my work</a>
+<a class="btn ghost" href="#contact">Start a project</a>
+</div>
+<div class="facts" role="list">
+<div role="listitem"><b>5 years</b><span>building for the web</span></div>
+<div role="listitem"><b>7</b><span>projects in this portfolio</span></div>
+<div role="listitem"><b>Mumbai</b><span>based in Maharashtra, India</span></div>
+<div role="listitem"><b>Open</b><span>for new projects</span></div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="wrap">
+<h2>Selected work</h2>
+<p class="lead">Seven live sites and platforms across safety, civic technology, media and entertainment. Open any project for the details.</p>
+<div class="tabs" id="tabs" role="group" aria-label="Filter projects"></div>
+<div class="grid" id="grid"></div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+<div>
+<h2>About me</h2>
+<p>I’m Alok, a web developer who also designs interfaces and animates brands. I’ve spent 5 years in Mumbai building websites and digital products, from safety and community platforms to media and entertainment brands.</p>
+<p>Because I handle design, motion and code myself, nothing gets lost between a mockup and the finished page. I also use AI tools such as Claude, ChatGPT, Midjourney and n8n to work faster without cutting corners on craft.</p>
+</div>
+<div id="skills" class="skills">
+<h2 style="font-size:2.6rem">Skills and tools</h2>
+<h3>Development</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>WordPress</li></ul>
+<h3>Design</h3><ul><li>Figma</li><li>Photoshop</li></ul>
+<h3>Motion and visuals</h3><ul><li>After Effects</li><li>Premiere Pro</li><li>Spline</li><li>Midjourney</li></ul>
+<h3>AI and workflow</h3><ul><li>Claude</li><li>ChatGPT</li><li>n8n</li><li>Notion</li></ul>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>What I can do for you</h2>
+<div class="services">
+<div><h3>Websites that work</h3><p>Fast, responsive sites built in HTML, CSS, JavaScript, React or WordPress, ready for your team to manage.</p></div>
+<div><h3>Interfaces people understand</h3><p>Clear layouts and flows designed in Figma, so visitors know where to go and what to do next.</p></div>
+<div><h3>Motion for your brand</h3><p>Logo animations and short visuals in After Effects and Spline that give your brand a recognizable feel.</p></div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="wrap">
+<h2>How we work together</h2>
+<p class="lead">A simple path from idea to launch, so you always know what happens next.</p>
+<ol class="steps">
+<li><b>Brief</b><span>You share your goals, audience and deadline.</span></li>
+<li><b>Design</b><span>I sketch the layout and style in Figma for your feedback.</span></li>
+<li><b>Build</b><span>I code the site, add motion and test it on real devices.</span></li>
+<li><b>Launch</b><span>We go live and I hand over everything you need.</span></li>
+</ol>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<h2>Questions, answered</h2>
+<details><summary>Are you available for new projects?</summary><p>Yes. Send a short brief through the form, WhatsApp or email and I’ll reply with next steps.</p></details>
+<details><summary>What technologies do you work with?</summary><p>HTML, CSS, JavaScript, React and WordPress for development; Figma and Photoshop for design; After Effects, Premiere Pro and Spline for motion.</p></details>
+<details><summary>Can you handle both design and development?</summary><p>Yes. I design the interface, animate the brand moments and build the finished website, so one person owns the whole flow.</p></details>
+<details><summary>How much does a website cost?</summary><p>It depends on scope. Share your goals, pages and deadline, and I’ll send a clear quote.</p></details>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap contact">
+<div>
+<h2>Let’s talk about your project</h2>
+<p class="lead" style="margin-bottom:0">Tell me what you’re building. I’ll reply with next steps.</p>
+<ul class="links">
+<li><a href="mailto:alok369.dev@gmail.com">alok369.dev@gmail.com</a></li>
+<li><a href="https://wa.me/919324629954" rel="noopener">Message on WhatsApp</a></li>
+<li><a href="https://www.linkedin.com/in/alok-yadav-1834242a0/" rel="noopener">LinkedIn</a></li>
+<li><a href="https://github.com/alok369dev" rel="noopener">GitHub</a></li>
+<li><a href="https://www.instagram.com/official_graphic_designer151/" rel="noopener">Instagram</a></li>
+</ul>
+</div>
+<form id="form" novalidate>
+<label>Your name<input id="fn" name="name" autocomplete="name" required><span class="err" id="e1"></span></label>
+<label>Your email<input id="fe" name="email" type="email" autocomplete="email" required><span class="err" id="e2"></span></label>
+<label>About your project<textarea id="fm" name="msg" required></textarea><span class="err" id="e3"></span></label>
+<input class="hp" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn primary" type="submit">Send message</button>
+<p id="ok" role="status" style="margin:0;color:var(--muted)"></p>
+</form>
+</div>
+</section>
+
+<div class="final">
+<div class="wrap">
+<h2>Have a website in mind?</h2>
+<p class="lead" style="margin:0 auto 28px">Let’s make it clear, fast and unforgettable.</p>
+<a class="btn primary" href="#contact">Start a project</a>
+</div>
+</div>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Alok. Mumbai, India.</span><a href="#top">Back to top</a></div></footer>
+
+<div class="sticky"><a class="btn primary" href="#contact">Hire me</a><a class="btn ghost" href="https://wa.me/919324629954" rel="noopener">WhatsApp</a></div>
+
+<dialog id="dlg" aria-labelledby="dt">
+<button class="icon-btn close" id="dc" aria-label="Close project details">✕</button>
+<div class="cat" id="dcat" style="color:var(--accent);font-weight:700"></div>
+<h3 id="dt"></h3>
+<p id="dd" style="color:var(--muted);margin:0"></p>
+<dl>
+<dt>My role</dt><dd id="drole"></dd>
+<dt>What I built</dt><dd id="dbuilt"></dd>
+<dt>Outcome</dt><dd class="todo">Results and screenshots will be added here.</dd>
+</dl>
+<a class="btn primary" id="dlink" target="_blank" rel="noopener">Visit project</a>
+<p class="todo" id="dnolink" hidden>Live link coming soon.</p>
+</dialog>
+
+<script>
+// EDIT HERE: fill "built" and "url" for each project. Leave "" if unknown.
+const projects=[
+{n:"Just Video",cat:"Broadcasting and media",d:"A creative broadcasting and video production experience focused on visual storytelling.",role:"Web Developer",built:"",url:"",tags:["Web Development"]},
+{n:"Nagarik",cat:"Civic technology",d:"A civic-focused digital platform that helps communities report and engage with local issues.",role:"Web Developer",built:"",url:"https://nagarik.online/",tags:["Web Development"]},
+{n:"Nischint Seva Foundation",cat:"Social impact",d:"Creative communication supporting community care, dignity and social impact.",role:"Web Developer",built:"",url:"https://nischintsewa.org/",tags:["Web Development"]},
+{n:"Biggtime Entertainment",cat:"Entertainment",d:"Visual and brand storytelling for the entertainment world.",role:"Web Developer",built:"",url:"https://biggtimeentertainment.com/",tags:["Web Development"]},
+{n:"Advent",cat:"Creative and media",d:"Brand-driven visual communication and creative identity work.",role:"Web Developer",built:"",url:"",tags:["Web Development"]},
+{n:"Nischint.care",cat:"Safety technology",d:"Digital safety experiences built around connection, awareness and personal well-being.",role:"Web Developer",built:"",url:"https://nischint.care/",tags:["Web Development","UI-UX","Motion","Branding"]},
+{n:"Starwire",cat:"Entertainment intelligence",d:"An entertainment intelligence ecosystem bringing media insights and discovery together.",role:"Web Developer",built:"",url:"https://starwire.world/",tags:["Web Development"]}
+];
+const $=id=>document.getElementById(id);
+const grid=$("grid"),tabs=$("tabs"),dlg=$("dlg");
+const filters=["All","Web Development","UI-UX","Motion","Branding"];
+function render(f){
+  grid.innerHTML="";
+  projects.forEach((p,i)=>{
+    if(f!=="All"&&!p.tags.includes(f))return;
+    const b=document.createElement("button");b.className="proj";
+    b.innerHTML='<span class="cat"></span><h3></h3><p></p><span class="tags"></span>';
+    b.children[0].textContent=p.cat;b.children[1].textContent=p.n;b.children[2].textContent=p.d;
+    b.children[3].textContent=p.tags.join(", ").replace("UI-UX","UI/UX");
+    b.onclick=()=>open(i);grid.appendChild(b);
+  });
+}
+function open(i){
+  const p=projects[i];
+  $("dcat").textContent=p.cat;$("dt").textContent=p.n;$("dd").textContent=p.d;$("drole").textContent=p.role;
+  const bt=$("dbuilt");bt.textContent=p.built||"Details coming soon.";bt.className=p.built?"":"todo";
+  const l=$("dlink");if(p.url){l.href=p.url;l.hidden=false;$("dnolink").hidden=true}else{l.hidden=true;$("dnolink").hidden=false}
+  dlg.showModal();
+}
+filters.forEach(f=>{
+  const t=document.createElement("button");t.className="tab";t.textContent=f.replace("UI-UX","UI/UX");
+  t.setAttribute("aria-pressed",f==="All");
+  t.onclick=()=>{[...tabs.children].forEach(x=>x.setAttribute("aria-pressed","false"));t.setAttribute("aria-pressed","true");render(f)};
+  tabs.appendChild(t);
+});
+render("All");
+$("dc").onclick=()=>dlg.close();
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+// menu, theme
+$("menu").onclick=()=>{const o=$("nav").classList.toggle("open");$("menu").setAttribute("aria-expanded",o)};
+$("nav").addEventListener("click",e=>{if(e.target.tagName==="A"){$("nav").classList.remove("open");$("menu").setAttribute("aria-expanded","false")}});
+try{const s=localStorage.getItem("theme");if(s)document.documentElement.dataset.theme=s}catch(e){}
+$("theme").onclick=()=>{
+  const r=document.documentElement;
+  const dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
+  r.dataset.theme=dark?"light":"dark";
+  try{localStorage.setItem("theme",r.dataset.theme)}catch(e){}
+};
+$("yr").textContent=new Date().getFullYear();
+// glowing orb and hero spotlight
+const orb=$("orb"),hero=$("hero");
+if(matchMedia("(hover:hover)").matches&&!matchMedia("(prefers-reduced-motion:reduce)").matches){
+  addEventListener("pointermove",e=>{
+    orb.classList.add("on");orb.style.transform="translate("+(e.clientX-17)+"px,"+(e.clientY-17)+"px)";
+    const r=hero.getBoundingClientRect();
+    hero.style.setProperty("--mx",(e.clientX-r.left)+"px");hero.style.setProperty("--my",(e.clientY-r.top)+"px");
+  });
+  document.addEventListener("pointerleave",()=>orb.classList.remove("on"));
+}
+// form: validates, then opens the visitor's email app (no server needed)
+$("form").addEventListener("submit",e=>{
+  e.preventDefault();
+  if($("hp").value)return;
+  const n=$("fn").value.trim(),m=$("fe").value.trim(),g=$("fm").value.trim();
+  $("e1").textContent=n?"":"Enter your name.";
+  $("e2").textContent=/^\S+@\S+\.\S+$/.test(m)?"":"Enter a valid email address.";
+  $("e3").textContent=g?"":"Tell me a little about your project.";
+  if(!n||!/^\S+@\S+\.\S+$/.test(m)||!g)return;
+  const body=encodeURIComponent(g+"\n\nFrom: "+n+" ("+m+")");
+  location.href="mailto:alok369.dev@gmail.com?subject="+encodeURIComponent("Project enquiry from "+n)+"&body="+body;
+  $("ok").textContent="Your email app should open with the message ready to send.";
+});
+</script>
+</body>
+</html>
